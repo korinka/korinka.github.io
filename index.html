@@ -1,307 +1,64 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title>atomiCCircus</title>
-<script language="JavaScript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-
-<script type="text/javascript" src="static/scripts/jquery.flickrGallery.js"></script>
-<script type="text/javascript" src="static/scripts/sidein_menu.js"></script>
-
-	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-
-<link href='themes/black/styles.css' rel='stylesheet' type='text/css' />
-<link href='themes/black/flickrGallery.css' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-xs-12">
+    <h1 class="text-center">Adam František Kollár</h1>
+    <h2 class="text-center" ><i>Tribute to A. F. Kollár</i></h2>
+        <div class="thumbnail"><image src="http://ipravda.sk/res/2014/02/19/thumbs/adam-frantisek-kollar-clanok.jpg" height="800" width="700">
+          <div class="caption text-center">Slovenský Sokrates</div>
+ 
 
 
-<script type="text/javascript">
-$(document).ready(function() {
-    var pathname = $(location).attr('href').split('=')[1];
-    //alert(pathname)
-    if (pathname == 'nav'){
-      $('#panel').show();
-      $('.trigger').addClass("active");
-    }
-    
-		$("a[rel=example_group], a[rel=news]").fancybox({
-			'transitionIn'		: 'none',
-			'transitionOut'		: 'none',
-			'titlePosition' 	: 'over',
-			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-				return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-			}
-		});    
-
-		$("a.news").fancybox({
-				'titlePosition'		: 'outside',
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-				return '<span id="fancybox-title-over">' + title + '</span>';
-			}				
-		});
-
-
-		$("a.flickrpicks").fancybox({
-				'titlePosition'		: 'outside',
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-		});
-
-		$("a.google").fancybox({
-				'titlePosition'		: 'outside',
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-				return '<span id="fancybox-title-over">' + title + '</span>';
-			}				
-		});
-    
-});
-</script>
-</head>
-<body>
-<div class="MasterContent">
-<div class="MasterHeader">
-<div style="padding:9px 20px 0 0; float:right;">
-<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FAtomic-circuS%2F188468534505654&amp;layout=button_count&amp;show_faces=true&amp;width=250&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:21px;" allowTransparency="true"></iframe>
-</div>
-<div style="padding:5px 20px 0 0; float:right;">
-  <a href='http://www.facebook.com/pages/Atomic-circuS/188468534505654' target='_blank'><img src='themes/black/images/f_logo.png' alt='Visit my fb site'>
-</div>
-</div>
-<div class="Masterlogo"></div>
-<div class="MasterFooter"></div>
-
-
-<div id="panel">
-	<div class="menucontent">
-    <a href="http://www.atomiccircus-tattoo.com/index.php?page=news"><div class="news"></div></a>
-    <a href="http://www.atomiccircus-tattoo.com/index.php?page=gallery"><div class="gallery"></div></a>
-    <a href="http://www.atomiccircus-tattoo.com/index.php?page=info"><div class="info"></div></a>
-    <a href="http://www.atomiccircus-tattoo.com/index.php?page=bio"><div class="bio"></div></a>
-    <a href="http://www.atomiccircus-tattoo.com/index.php?page=more"> <div class="more"></div></a>
-	</div>
-	<!--div class="clownwrapper">
-	  <img src="http://www.atomiccircus-tattoo.com/themes/black/images/clownnews.jpg">
-	</div-->
-	<div style="clear:both;"></div>
-
-</div>
-
-<!--a class="trigger" href="#">Menu</a-->
-
-<script type="text/javascript">
-$(document).ready(function(){
-
-
-	$('.news').hover( function(){
-			$('.clownwrapper img').attr({src:'http://www.atomiccircus-tattoo.com/themes/black/images/clownnews.jpg'});
-
-	});
-	$('.gallery').hover( function(){
-			$('.clownwrapper img').attr({src:'http://www.atomiccircus-tattoo.com/themes/black/images/clowngallery.jpg'});
-	});
-	$('.info').hover( function(){
-			$('.clownwrapper img').attr({src:'http://www.atomiccircus-tattoo.com/themes/black/images/clowninfo.jpg'});
-
-	});
-	$('.bio').hover( function(){
-			$('.clownwrapper img').attr({src:'http://www.atomiccircus-tattoo.com/themes/black/images/clownbio.jpg'});
-	});
-	$('.more').hover( function(){
-			$('.clownwrapper img').attr({src:'http://www.atomiccircus-tattoo.com/themes/black/images/clownMore.jpg'});
-	});
-	
-	$(".trigger").click(function(){
-		$("#panel").toggle("fast");
-		$(this).toggleClass("active");
-		return false;
-	});
-
-
-
-
-});
-</script>
-<div id="content">
-
-
-  <div id="btn_info">
-  <a href="" class="infobtn"></a><a href="" class="linksbtn"></a>
+ 
+     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+       <h3 >Toto je kalendárium zo života Kollára: </h3>
+<p><ul><li><strong>15. 04. 1718</strong> - Adam František Kollár sa narodil v Terchovej.</li>
+<li><strong>1723</strong> - sa presťahoval s rodičmi do Banskej Bystrice.
+<li><strong>1736</strong> - ukončil štúdium na kolégiách v Banskej Bystrici, v Banskej Štiavnici a Trnave.
+<li><strong>1737/39 </strong>- absolvoval vo Viedni repetítio humaniorum, patriace k profesorskému vzdelaniu.
+<li><strong>1740/47</strong> - štúdium filozofie, práva, klasických a orientálnych jazykov Viedeň.
+<li><strong>1747/48</strong> - profesor latinčiny na gymnáziu v Liptovskom Mikuláši.
+<li><strong>10. 6. 1748</strong> - prijatý do C. k. Dvorskej knižnici vo Viedni za pisára /skriptora/.
+<li><strong>1748/51</strong> - popri knihovníckom povolaní prednášal gréčtinu pre poslucháčov medicíny /žiakov prefekta Dvorskej knižnice Gerarda van Swietena/.
+<li><strong>12. 3. 1749</strong> - vymenovaný za druhého kustóda Dvorskej knižnice.
+<li><strong>1755</strong> - vydal vzácny rukopis tureckej kroniky Saadeddini scriptos Annales turcici... s latinským prekladom.
+<li><strong>1756</strong> - doplnil a vydal gramatiku tureckého jazyka od Fr. Mesgnien-Meninskiho Institutiones linguae turcicae... 
+<li><strong>1. 5. 1758</strong> - vymenovaný za prvého kustóda Dvorskej knižnice.
+<li><strong>1758/66 </strong>- vypracoval štvorzväzkový systematický katalóg teologických tlačí Dvorskej knižnice.
+<li><strong>27. 4. 1759</strong> - prefekt Dvorskej knižnice Gerard van Swieten poveril Kollára doplnením a vydaním Lambeckovho starého súpisu rukopisov Dvorskej knižnice.
+<li><strong>1760</strong> - vydal súpis rukopisných kódexov Dvorskej knižnice Ad viros sacra et profana eruditione claros de commentariis in manu exaratos codices aug. bibliothecae Vindobonensis propediem prelum subituris epistola.
+<li><strong>1761/62</strong>- vydal zbierku dokumentov z viedenských archívov Analecta monumentorum omnis aevi Vindobonensia v dvoch zväzkoch, v ktorých publikoval neznáme dokumenty, kroniky a archívny materiál. Toto dielo mu získalo meno medzi vzdelancami na celom svete.
+<li><strong>1762 </strong>- vydal dielo humanistického autora Gašpara Urisini-Velliho De bello Pannonico libri decem /Desať kníh o panónskej vojne/.
+<li><strong>1764</strong> - uverejnil spis De originibus et usu perpetuo potestatis legislatoriae circa sacra apostolicorum regum Ungariae libellus singularis. 
+<li><strong>1766</strong> - prednášal diplomatiku, dejiny a štátne právo archivárom a knihovníkom.
+1767 - preložil do slovenčiny tereziánsky urbár.
+<li><strong>1769</strong> - dokončil dejiny karpatoruských Rusínov a ich cirkevného života De ortu, progressu et incolatu nationis Ruthenicae in Hungaria /O pôvode, rozšírení a usídlení rusínskej národnosti v Uhorsku/. 
+<li><strong>24. 7. 1772</strong> - Kollár poverený riadením C. k. Dvorskej knižnice po smrti prefekta Gerarda van Swietena /18. 6. 1772/.
+<li><strong>6. 2. 1773 </strong>- na Kollárov návrh odstúpili duplikáty kníh Dvorskej knižnice Univerzitnej knižnici v Prahe.
+<li><strong>1773</strong> - vypracoval knižničný poriadok pre Knižnicu akademického kolégia vo Viedni.
+<li><strong>18. 12. 1773</strong> - dostal za úlohu preskúmať fondy knižníc zrušenej jezuitskej rehole v celej monarchii.
+<li><strong>7. 1. 1774 </strong>- vymenovaný za riaditeľa C. k. Dvorskej knižnice vo Viedni, za člena Dvorskej študijnej komisie, za riaditeľa gymnázií v celej ríši a dvorského radcu.
+<li><strong>1774</strong> - vypracoval katalogizačné pravidlá pre Knižnicu bývalého jezuitského kolégia v Olomouci.
+<li><strong>1774/75</strong> - zostavil tri učebnice latinčiny.
+<li><strong>1774/77</strong> - spolupracoval ako člen Dvorskej študijnej komisie na školských reformách, ktoré vyšli r. 1777 ako školský poriadok pod názvom Ratio educationis.
+<li><strong>1775</strong> - povýšený do šľachtického stavu s titulom de Keresztén. Dostal majetok Keresztén.
+<li><strong>1775</strong> - vydal spis Instructio privata /Vlastný návrh/ zameraný na organizáciu školstva.
+<li><strong>1777 </strong>- vyšla organizácia školstva Ratio educationis totiusque rei literariae per Regnum Hungariae et provincias etiam adnexas /pedagogickú časť vypracoval tajne Kollár/.
+<li><strong>11. 5. 1778</strong> - Kollár zostavil zoznam vykonávaných prác a jednotlivých pracovníkov Dvorskej knižnice.
+<li><strong>1778 </strong>- vydal prepracovanú a doplnenú čítanku francúzskeho autora P. Chomprého Selecta latini sermonis exemplaria /Vybrané príklady latinskej reči/.
+<li><strong>1782</strong> - na privítanie pápeža vo Viedni zložil báseň In jucundissimum Vindobonam adventum Pii pp. VI. carmen.
+<li><strong>1783</strong> - začal písať, ale nedokončil spis Historiae jurisque publici regni Ungariae anivenitates /Pôvabnosť dejín verejného práva uhorského kráľovstva/. Tretí zväzok ostal rozpracovaný.
+<li><strong>10. 7. 1783</strong> - Adam František Kollár zomrel vo Viedni, na 2 poschodí v byte na Am Stockameisenplatz č. 1090 /po 35 ročnej činnosti v Dvorskej činnosti/. </li>   
+</ul>
+ </p>
+ </blockquote>
+          <blockquote>
+            <p>"Spálením slov zabiť myšlienku, vymazať pamäť, zastrašiť možných nasledovníkov, potlačiť túžbu po slobode prejavu."</p>
+            <footer><cite>Ján Tibenský</cite></footer>
+          <h3>Ak máte čas môžete sa o ňom dozvedieť viac na stránke <a href="https://en.wikipedia.org/wiki/Adam_Franti%C5%A1ek_Koll%C3%A1r" target="_blank">Wikipedia Adama Františka Kollára</a>.</h3>
+        </div>
+      </div>
+    </div> 
   </div>
-  <div class="clear10"></div>	
-  <div id="infoholder">
-	  <div class="textwrapper">
-	    <h1>Info</h1>
-	    <div class="text">
-
-				<h3>HVOR FINNER DU MEG :</h3>
-				"google" href="/pages/map.php" title="Her finner du AtomiccircuS">trykk her for å se hvor jeg holder til</a>). Jeg tattooerer i et privatstudio, hvor jeg kun tar avtalte timer ( ingen dropp inn )
-				<div class="clear10"></div>
-				<h3>KATKA IŠTOKOVÁ :</h3>
-
-				Skúška webstránky.du har sett på litt av mitt arbeid så veit du at jeg veldig gjerne tar store tattoos, og dem tar gjerne ganske så langt tid. Tattoos som er under arbeid skal alltid ha prioritett foran nye bestillinger.<div class="clear"></div>
-				Jeg har kommet allerede såpass langt at jeg tar meg frihet for å velge hvilket tattoos jeg vil lage. 
-				Jeg har begynnt med tattooering fodi det er rett og slett gøy og eg koser meg og kunne ikke tenkt meg en bedre jobb. Altså hvis ideen faller for inni smakn min , har du mye større sjanser å få brev tilbake og eventuellt få tattoo.<div class="clear"></div>
-				Hvis eg er interessert i din tattooering skal du få en brev extra i tilleg til denne auto replay brevet.Hvis du for den betyr det at du har en fabelaktig idee og at eg er interessert, og at eg vil gjerne spørre deg mere om den, og eventuellt avtale vente tid og pris.
-				<div class="clear10"></div>
-				Du må ikke komme syk til en tattoeringstime, da er det bedre at du ringer og avbestiller!<br>
-                            Renslighet vil jeg sette stor pris på når du kommer å tattoerer deg hos meg!<br>
-                            Hvis du er allergisk MÅ jeg ha beskjed om dette på forhånd!<br>
-                            Jeg tattoerer ikke mennesker under 18 år!
-                            <div class="clear10"></div>
-
-
-				I mine tattoos prefererer eg sterkt kunstnerisk frihet. Tattoos som firster mest er tattoos som krever mye, spessiele unike ideer setter eg veldig spris på. 
-				( altså betydninga bak tattooen, eller en veldig tema )
-				Jeg er mest glad å jobbe med farger, eg mener hvis man lager tattooen bra nok og den blir tatt vare på så skal fargen holde seg like bra sånn som tattoos med kun svart hadde gjørt det. Men still deg dette spørrsmålet hvis du er uenig: hvordan skal du se ut om 40 år ? Blir du en gang gammel så tenker du ikke på at tattooen har blitt blass stygg. Du tenker på den som et del av deg, som har blitt gammel med deg, og som miner deg på gode gamle tider. Dette står tattooen for i lengden og dette er det som teller.
-				<div class="clear10"></div>
-				Som nevnt tidligere er eg veldi kresen dvs. At eg ikke tattooerer :
-				<div class="clear"></div>
-				Tribals style, Skrift style, og hva som helst som er under 7 cm. Jo mere avansert og moro tattoo ideen din er jo større sjanser er at du skal få den. Eg sier ikke at ideen din er dårlig, eg sier bare at eg er ikke den rette som skal gjøre den Det finns mange andre som vil gjerne gjøre det. Det er veldig viktig å velge sin tattoovør! Bruk litt tid på det og undersøk litt før du går til hvem som helst. 
-				<div class="clear10"></div>
-				Husk når du sender mail kodeord : TATTOO
-				<div class="clear10"></div>
-
-				<h3>TATTOO DESIGN : </h3>
-
-				Eg tegner ikke tattooen for deg hvis eg ikke skal tattooere den!
-				Eg skal heller ikke tegne noe før vi har en avtalt booking/time .
-
-				<h3>DIN FØRSTE TATTOO :</h3>
-
-				Hvis du har ingen tattoo og du lurer på ting vil eg anbefale at du undersøker litt og at du ikke stormer inni det. Dette skal sitte for resten av livet. ( hvis du nå tenker jo da eg veit jo det, tenk litt på hvor mange forskjellige individeer eg har møt som har sakt det. dem angrer på første tattooen og vil gjerne dekke den eller har allerede gjørt det. Eg tipper på at det er 85% av folk eg tattooerer. )
-				En side som kan hjelpe er  :
-				<div class="clear10"></div>
-				http://www.norsktattoounion.org/ ( norsk side )<div class="clear"></div>
-				http://www.offthemaptattoo.com/get-the-perfect-tattoo.html. ( amerikansk )
-
-
-				<h3>OM JEG ER I DIN NÆRHET ? :</h3>
-
-				Kan godt hende at eg drar på en eller anna convention. Hvis det skjer kan du holde deg oppdater på min web/nett side. Og hvis eg i tilfelle kommer i nærheten av deg, send gjerne mel så ser vi hva vi for til.
-
-
-				<h3>TIPS :</h3>
-
-				Eg tar ikke lærlings plasser. Har heller ikke tid å svare på individuelle spørsmål om tattooeringer. Eg ville absolutt anbefale at du drar til din lokale tattoo studio og spør der om du kan få lærlingsplass, hvis du har en brenende ønske om å bli tattoovør. Det er ikke akkurat lurt å begynne hjemme uten neo kunnskap i det hele tatt!
-				Selv om mange av verdens flinkeste tattoovører har begynnt på eget håndt.
-
-
-				<h3>AIRBRUSH  :</h3>
-
-				Har ikke jobbet lenge med airbrushing men har jo mulighet til å overføre mine kunnskaper fra andre medier til airbrushing. Så dette funker helt perfekt. 
-				Akkurat nå har eg ingen annledning å ta imot alt for store bestillinger dvs. Hele biler/og større.
-				Eg driver ikke en farge lakering. Eg lager kun motiver!
-				Regler for motiver er det samma for airbrush og tattoo, ønsker ingenting enkelt.
-				Tar heller ikke striping.
-				Ønsker du en bestilling send mail med kode ord : AIRBRUSH
-
-				<h3>MALERIER :</h3>
-
-				Mange av maleriene som på sid aer til salgs. 
-				Lurer du på å kjøpe eller gi bestilling om et maleri send mail med KODE ORD MALERI og tallet til malleriet. Da for du tilbakemelding om størrelse på motivet ( siden det finns en utrolig variasjon av størrelser )og eventuellt pris.
-				Tar eg maleri bestillinger, ja det gjør eg også. Men eg prioriterer først og fremst tattoos og deretter airbrushing. Hvis eg for litt ekstra tid og ideen din er i min smak kan vi ordne noe. 
-				Regner med at du har sett gjennom min galleri og at du veit hva eg liker.
-
-				<h3>HVA MÅ DU FORVENTE MED EN STOR TATTOO :</h3>
-
-				En hel sleeven eller backbeace ( spørs på individen/størrelsen, motivet/vanskelighetsgrad )
-				tar mellom min20 – max 60 timer til å lage, som må selvsagt deles opp i flere sittinger som kan ta fra 3-12 mnd. Dette er avhengig av hvor lang tid vi må vente fra hver sitting og hvor lenge vedkommende klarer å sitte i en sitting. Eg liker ikke å ha halvferige tattooeringer som går rundt , og eg regner med at dem fleste liker det heller ikke.
-				Det beste hadde vart å tattooere så gjevnt en stor peace som mulig dvs maximalt 2uker mellom hver sitting. 
-				<div class="clear10"></div>
-				Dette her er viktig : Hvis du tror at penger, jobb, avstand eller noe i likheten kunne vare et problem, og kunne hindre regulare tattoo sittinger, vil eg gjerne be deg å tenke om du kunne ta en mindre peace som kunne ta mindre sittinger. 
-				Å TA EN STOR TATTOO ER Å TA STOR ANSVAR OG RESPONSABILITET.
-
-				<h3>HVORDAN BEHANDLER MAN TATTOO ETTER MAN HAR TATT DEN :</h3>
-
-				Akkurat denne delen blir sikkert en del folk uenige, men eg sier hva som har funket best for meg.
-				 <div class="clear10"></div>
-				1.La plastfolien være på i minst hel døgn. 
-				Du kan gjerne før du legger deg ta av plasten vaskje/dusje forsiktig , lufte litt  smøre inn og pakke inn igjen. 
-				<div class="clear10"></div>
-				 
-				2.Neste dag Fjern plastfolien , vask tatoveringen med lunkent og mildt grønnsåpevann. Tørk tatoveringen med tjukt husholdnings papir som ikke loer, husk at når du tørker må du trykke med papiret, slik at du suger ut så mye væske som mulig. Vent så i 10-15 min, se etter om det kommer væske ut fra tatoveringen Tatoveringen er nå ”tørr”, og du skal nå smøre et tynt lag med Tattoo Goo/Pegasus Tattoo Cream / Helosan, eller den type etterbehandlings krem som du får anbefalt av din Tattoo Artist.
-				<div class="clear10"></div>
-				3. Smør tatoveringen mange ganger daglig, med tynne lag. Helosan salven skal ligge som en hinne på tatoveringen, for så og fordampe (ikke trekke in i huden), påfør deretter kremen ved behov.  Det skal til enhver tid være ett tynt lag påført. Eller følg de instruksjoner for den typen etterbehandlings krem som anbefalt av din Tattoo Artist. Vask også tatoveringen innimellom med lunkent og mildt grønnsåpevann, slik at du får vasket vekk gamle krem rester. Tattooen skal aldri bli tørr, du må ikke få skorpe!
-				<div class="clear10"></div>
-				4. Ikke bandasjer tatoveringen, Bruk RENE og løse klær slik at den får luft.
-				<div class="clear10"></div>
-				5. Ikke klø eller skrap på tatoveringen, kløe dempes/reduseres med at du slår forsiktig med flat hånd eller påfører alkohol. Alle skorper/rue som måtte komme, må ikke plukkes på, de skal falle av naturlig. Skal du på et jobb hvor tattooen blir utsatt for urenslighet kan du pakke det inne, men ikke i lange perioder. Huden må puste!
-				<div class="clear10"></div>
-				6. Under hele helings prosessen som tar ca 2 uker, må du unngå å : bade i klorvann, lange bad, badstue og for mye sollys.
-				Du skal heller ikke trene første dagene etter tattooeringa. 
-					
-
-
-				<h3>AIRBRUSH  :</h3>
-
-				Har ikke jobbet lenge med airbrushing men har jo mulighet til å overføre mine kunnskaper fra andre medier til airbrushing. Så dette funker helt perfekt. 
-				Akkurat nå har eg ingen annledning å ta imot alt for store bestillinger dvs. Hele biler/og større.
-				Eg driver ikke en farge lakering. Eg lager kun motiver!
-				Regler for motiver er det samma for airbrush og tattoo, ønsker ingenting enkelt.
-				Tar heller ikke striping.
-				Ønsker du en bestilling send mail med kode ord : AIRBRUSH
-
-
-
-
-
-
-				<h3>MALERIER :</h3>
-
-				Mange av maleriene som på sid aer til salgs. 
-				Lurer du på å kjøpe eller gi bestilling om et maleri send mail med KODE ORD MALERI og tallet til malleriet. Da for du tilbakemelding om størrelse på motivet ( siden det finns en utrolig variasjon av størrelser )og eventuellt pris.
-				Tar eg maleri bestillinger, ja det gjør eg også. Men eg prioriterer først og fremst tattoos og deretter airbrushing. Hvis eg for litt ekstra tid og ideen din er i min smak kan vi ordne noe. 
-				Regner med at du har sett gjennom min galleri og at du veit hva eg liker.
-
- 	      	      
-	    </div>
-	  </div>
-    <div class="info_monster"></div>  
-<div class="info_monster2"></div> 
-  </div>
-  
-	<div id="linksholder">
-	  <div class="textwrapper">
-	    <h1>Links</h1>
-	    <div class="text">
- 	      	      
-	    </div>
-	  </div>
-    <div class="links_monster"></div>  
-  </div>
-  
-  
-<script type="text/javascript">
-  $(function(){
-    $('#linksholder').hide();
-    
-    $('.infobtn').click(function(){
-     $('#linksholder').hide();    
-     $('#infoholder').show();
-     return false;
-    });    
-    $('.linksbtn').click(function(){
-    $('#infoholder').hide();
-    $('#linksholder').show();
-     return false;
-    });
-  });
-</script>    
-
-
-<div class="clear"></div>		
-  </div>
-<div class="clear"></div>		
- </div>
-
-<div class="clear"></div>		
-</div>
-  </body>
-</html>  
+  <footer class="text-center">
+    <hr>
